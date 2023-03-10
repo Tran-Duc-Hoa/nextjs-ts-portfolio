@@ -1,0 +1,14 @@
+#navBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 5%;
+
+	.navLink {
+		color: #fff;
+		cursor: pointer;
+		font-weight: 700;
+		padding: 0 10px;
+		text-decoration: none;
+	}
+}
