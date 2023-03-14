@@ -9,13 +9,13 @@ const NavBar = () => {
 				<Link href="/" className={styles.navLink}>
 					Home
 				</Link>
-				<Link href="/" className={styles.navLink}>
+				<Link href="/work" className={styles.navLink}>
 					Work
 				</Link>
-				<Link href="/" className={styles.navLink}>
+				<Link href="/about-me" className={styles.navLink}>
 					About Me
 				</Link>
-				<Link href="/" className={styles.navLink}>
+				<Link href="/contact" className={styles.navLink}>
 					Contact
 				</Link>
 			</ul>

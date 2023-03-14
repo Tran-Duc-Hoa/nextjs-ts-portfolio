@@ -5,3 +5,12 @@ body {
 	background-color: #1c1c1c;
 	color: #fff;
 }
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6rem;
+	background-color: #27282c;
+}

@@ -1,0 +1,17 @@
+.wrapper {
+	display: inline-flex;
+
+	.staticText {
+		font-size: 2rem;
+	}
+
+	.dynamicText {
+		list-style-type: none;
+		margin: 0;
+
+		li {
+			color: red;
+			font-size: 3rem;
+		}
+	}
+}
