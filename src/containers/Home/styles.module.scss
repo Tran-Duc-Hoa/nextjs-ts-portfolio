@@ -10,8 +10,21 @@
 		margin: 0;
 
 		li {
-			color: red;
+			color: #fc6d6d;
 			font-size: 3rem;
+
+			span {
+				position: relative;
+
+				&::after {
+					content: "";
+					position: absolute;
+					left: 0;
+					height: 100%;
+					width: 100%;
+					border-left: 2px solid #fc6d6d;
+				}
+			}
 		}
 	}
 }
