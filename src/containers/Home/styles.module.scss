@@ -1,3 +1,7 @@
+$DYNAMIC_TEXT_HEIGHT: 60px;
+$MAX_LENGTH: 15;
+$NO_LINES: 3;
+
 .wrapper {
 	display: inline-flex;
 
@@ -6,25 +10,54 @@
 	}
 
 	.dynamicText {
-		list-style-type: none;
+		height: $DYNAMIC_TEXT_HEIGHT;
+		position: relative;
+		top: -15px;
+		line-height: $DYNAMIC_TEXT_HEIGHT;
 		margin: 0;
+		overflow: hidden;
+		padding-left: 8px;
 
 		li {
 			color: #fc6d6d;
 			font-size: 3rem;
+			font-weight: 500;
+			list-style: none;
+			position: relative;
+			top: 0;
+			animation: slide 6s steps(1) infinite;
 
 			span {
 				position: relative;
 
 				&::after {
-					content: "";
 					position: absolute;
+					bottom: 0;
 					left: 0;
 					height: 100%;
 					width: 100%;
+					content: "";
+					animation: typing 3s steps($MAX_LENGTH) infinite;
+					background: #27282c;
 					border-left: 2px solid #fc6d6d;
 				}
 			}
 		}
+	}
+}
+
+@keyframes slide {
+	100% {
+		top: -($DYNAMIC_TEXT_HEIGHT * $NO_LINES);
+	}
+}
+
+@keyframes typing {
+	50% {
+		left: 100%;
+	}
+
+	100% {
+		left: 0%;
 	}
 }

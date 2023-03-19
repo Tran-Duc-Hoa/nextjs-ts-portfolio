@@ -6,16 +6,13 @@ export default function Home() {
 			<div className={styles.staticText}>I&apos;m a</div>
 			<ul className={styles.dynamicText}>
 				<li>
-					<span>Lorem, ipsum dolor.</span>
+					<span>Web Developer</span>
 				</li>
 				<li>
-					<span>Lorem, ipsum.</span>
+					<span>React Developer</span>
 				</li>
 				<li>
-					<span>Lorem, ipsum dolor.</span>
-				</li>
-				<li>
-					<span>Lorem ipsum dolor sit.</span>
+					<span>Node.js Developer</span>
 				</li>
 			</ul>
 		</div>

@@ -1,9 +1,10 @@
 @use "./normalize.css";
-@use "./variables.scss";
+
+$WHITE: #fff;
 
 body {
 	background-color: #1c1c1c;
-	color: #fff;
+	color: $WHITE;
 }
 
 .main {
