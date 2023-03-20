@@ -1,9 +1,17 @@
 @use "./normalize.css";
 @use "./variables.scss";
 
+$BODY_COLOR: #1c1c1c;
+
+html {
+	font-size: 62.5%;
+}
+
 body {
 	background-color: #1c1c1c;
 	color: #fff;
+	font-size: 1.6rem;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .main {
