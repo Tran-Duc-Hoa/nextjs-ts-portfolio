@@ -3,41 +3,40 @@ $BODY_COLOR: #27282c;
 
 .wrapper {
 	display: inline-flex;
+	align-items: center;
 
-	.text {
+	.firstText {
 		font-size: 6rem;
 	}
 
-	.list {
-		color: $TYPE_TEXT_COLOR;
-		font-size: 6rem;
-		list-style-type: none;
+	.secTexts {
 		margin: 0;
-		padding: 0;
-		overflow: hidden;
+		list-style: none;
 		height: 90px;
 		line-height: 90px;
+		overflow: hidden;
 
-		li {
+		.item {
 			position: relative;
 			top: 0;
-			animation: slide 4.5s steps(3) infinite;
+			font-size: 6rem;
+			color: $TYPE_TEXT_COLOR;
 			padding: 0 20px;
 			text-shadow: 0 0 10px $TYPE_TEXT_COLOR;
+			animation: slide 6s steps(2) infinite;
 
 			span {
 				position: relative;
 
 				&::after {
 					content: "";
-					width: 102%;
-					height: 90px;
 					position: absolute;
-					bottom: 0;
 					left: 0;
-					animation: typing 1.5s steps(10) infinite;
-					background: $BODY_COLOR;
+					width: 100%;
+					height: 90px;
+					background-color: $BODY_COLOR;
 					border-left: 2px solid $TYPE_TEXT_COLOR;
+					animation: typing 1.5s steps(10) infinite alternate;
 				}
 			}
 		}
@@ -53,6 +52,6 @@ $BODY_COLOR: #27282c;
 
 @keyframes slide {
 	100% {
-		top: -270px;
+		top: -180px;
 	}
 }

@@ -3,15 +3,12 @@ import styles from "./styles.module.scss";
 export default function Home() {
 	return (
 		<div className={styles.wrapper}>
-			<div className={styles.text}>I&apos;m a</div>
-			<ul className={styles.list}>
-				<li>
-					<span>Youtuber</span>
-				</li>
-				<li>
+			<span className={styles.firstText}>I&apos;m a</span>
+			<ul className={styles.secTexts}>
+				<li className={styles.item}>
 					<span>Developer</span>
 				</li>
-				<li>
+				<li className={styles.item}>
 					<span>Freelancer</span>
 				</li>
 			</ul>
